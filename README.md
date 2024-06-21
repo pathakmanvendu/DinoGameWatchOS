@@ -47,18 +47,3 @@ GameLogic.swift: Contains the game loop and collision detection.
 Customization
 To customize the game, you can adjust parameters such as:
 
-Dino speed
-Obstacle frequency
-Graphics and design elements
-These settings can be modified in GameLogic.swift and the corresponding SwiftUI views.
-
-Contribution
-Contributions are welcome! If you have suggestions for improvements or want to report a bug, please open an issue or submit a pull request.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-Contact
-For any questions or feedback, please reach out to your.email@example.com.
-
-Enjoy the game!
