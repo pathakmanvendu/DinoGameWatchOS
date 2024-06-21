@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C29842C2C25ABA500E618EA /* DinoGameWatchos Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5C29842B2C25ABA500E618EA /* DinoGameWatchos Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5C2984312C25ABA500E618EA /* DinoGameWatchosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2984302C25ABA500E618EA /* DinoGameWatchosApp.swift */; };
+		5C2984332C25ABA500E618EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2984322C25ABA500E618EA /* ContentView.swift */; };
+		5C2984382C25ABA600E618EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2984372C25ABA600E618EA /* Preview Assets.xcassets */; };
+		5C2984562C25ABB100E618EA /* cactus1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C2984422C25ABB100E618EA /* cactus1.png */; };
+		5C2984572C25ABB100E618EA /* cactus2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C2984432C25ABB100E618EA /* cactus2.png */; };
+		5C2984582C25ABB100E618EA /* cactus3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C2984442C25ABB100E618EA /* cactus3.png */; };
+		5C2984592C25ABB100E618EA /* doubleCactus.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C2984452C25ABB100E618EA /* doubleCactus.png */; };
+		5C29845A2C25ABB100E618EA /* tripleCactus.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C2984462C25ABB100E618EA /* tripleCactus.png */; };
+		5C29845B2C25ABB100E618EA /* dinoDead.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C2984482C25ABB100E618EA /* dinoDead.png */; };
+		5C29845C2C25ABB100E618EA /* dinoLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C2984492C25ABB100E618EA /* dinoLeft.png */; };
+		5C29845D2C25ABB100E618EA /* dinoRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C29844A2C25ABB100E618EA /* dinoRight.png */; };
+		5C29845E2C25ABB100E618EA /* flyer1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C29844B2C25ABB100E618EA /* flyer1.png */; };
+		5C29845F2C25ABB100E618EA /* flyer2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C29844C2C25ABB100E618EA /* flyer2.png */; };
+		5C2984602C25ABB100E618EA /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C29844E2C25ABB100E618EA /* cloud.png */; };
+		5C2984622C25ABB100E618EA /* moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C2984502C25ABB100E618EA /* moon.png */; };
+		5C2984632C25ABB100E618EA /* die.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5C2984522C25ABB100E618EA /* die.wav */; };
+		5C2984642C25ABB100E618EA /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5C2984532C25ABB100E618EA /* jump.wav */; };
+		5C2984672C25ACE100E618EA /* GroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2984662C25ACE100E618EA /* GroundView.swift */; };
+		5C29846A2C25AD0F00E618EA /* DinoStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2984692C25AD0F00E618EA /* DinoStateModel.swift */; };
+		5C29846C2C25AE7E00E618EA /* ObstacleStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C29846B2C25AE7E00E618EA /* ObstacleStateModel.swift */; };
+		5C29846E2C25B00D00E618EA /* way.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C29846D2C25B00D00E618EA /* way.png */; };
+		5C2984722C25B0DC00E618EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2984712C25B0DC00E618EA /* Assets.xcassets */; };
+		5C2984742C25B1C900E618EA /* CloudsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2984732C25B1C900E618EA /* CloudsView.swift */; };
+		5C2984762C25B5CB00E618EA /* ObstacleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2984752C25B5CB00E618EA /* ObstacleView.swift */; };
+		5C2984782C25D3A000E618EA /* DinoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2984772C25D3A000E618EA /* DinoView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C29842D2C25ABA500E618EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C29841F2C25ABA500E618EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C29842A2C25ABA500E618EA;
+			remoteInfo = "DinoGameWatchos Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5C29843E2C25ABA600E618EA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5C29842C2C25ABA500E618EA /* DinoGameWatchos Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5C2984252C25ABA500E618EA /* DinoGameWatchos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinoGameWatchos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C29842B2C25ABA500E618EA /* DinoGameWatchos Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DinoGameWatchos Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C2984302C25ABA500E618EA /* DinoGameWatchosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinoGameWatchosApp.swift; sourceTree = "<group>"; };
+		5C2984322C25ABA500E618EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5C2984372C25ABA600E618EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5C2984422C25ABB100E618EA /* cactus1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cactus1.png; sourceTree = "<group>"; };
+		5C2984432C25ABB100E618EA /* cactus2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cactus2.png; sourceTree = "<group>"; };
+		5C2984442C25ABB100E618EA /* cactus3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cactus3.png; sourceTree = "<group>"; };
+		5C2984452C25ABB100E618EA /* doubleCactus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubleCactus.png; sourceTree = "<group>"; };
+		5C2984462C25ABB100E618EA /* tripleCactus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tripleCactus.png; sourceTree = "<group>"; };
+		5C2984482C25ABB100E618EA /* dinoDead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dinoDead.png; sourceTree = "<group>"; };
+		5C2984492C25ABB100E618EA /* dinoLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dinoLeft.png; sourceTree = "<group>"; };
+		5C29844A2C25ABB100E618EA /* dinoRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dinoRight.png; sourceTree = "<group>"; };
+		5C29844B2C25ABB100E618EA /* flyer1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flyer1.png; sourceTree = "<group>"; };
+		5C29844C2C25ABB100E618EA /* flyer2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flyer2.png; sourceTree = "<group>"; };
+		5C29844E2C25ABB100E618EA /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
+		5C2984502C25ABB100E618EA /* moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moon.png; sourceTree = "<group>"; };
+		5C2984522C25ABB100E618EA /* die.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = die.wav; sourceTree = "<group>"; };
+		5C2984532C25ABB100E618EA /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
+		5C2984662C25ACE100E618EA /* GroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundView.swift; sourceTree = "<group>"; };
+		5C2984692C25AD0F00E618EA /* DinoStateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinoStateModel.swift; sourceTree = "<group>"; };
+		5C29846B2C25AE7E00E618EA /* ObstacleStateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstacleStateModel.swift; sourceTree = "<group>"; };
+		5C29846D2C25B00D00E618EA /* way.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = way.png; sourceTree = "<group>"; };
+		5C2984712C25B0DC00E618EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C2984732C25B1C900E618EA /* CloudsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudsView.swift; sourceTree = "<group>"; };
+		5C2984752C25B5CB00E618EA /* ObstacleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstacleView.swift; sourceTree = "<group>"; };
+		5C2984772C25D3A000E618EA /* DinoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinoView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C2984282C25ABA500E618EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C29841E2C25ABA500E618EA = {
+			isa = PBXGroup;
+			children = (
+				5C29842F2C25ABA500E618EA /* DinoGameWatchos Watch App */,
+				5C2984262C25ABA500E618EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C2984262C25ABA500E618EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C2984252C25ABA500E618EA /* DinoGameWatchos.app */,
+				5C29842B2C25ABA500E618EA /* DinoGameWatchos Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C29842F2C25ABA500E618EA /* DinoGameWatchos Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				5C2984302C25ABA500E618EA /* DinoGameWatchosApp.swift */,
+				5C2984322C25ABA500E618EA /* ContentView.swift */,
+				5C2984712C25B0DC00E618EA /* Assets.xcassets */,
+				5C2984682C25AD0500E618EA /* Model */,
+				5C2984652C25ACD000E618EA /* Core */,
+				5C2984552C25ABB100E618EA /* dino.assets */,
+				5C2984362C25ABA600E618EA /* Preview Content */,
+			);
+			path = "DinoGameWatchos Watch App";
+			sourceTree = "<group>";
+		};
+		5C2984362C25ABA600E618EA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5C2984372C25ABA600E618EA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5C2984472C25ABB100E618EA /* cacti */ = {
+			isa = PBXGroup;
+			children = (
+				5C2984422C25ABB100E618EA /* cactus1.png */,
+				5C2984432C25ABB100E618EA /* cactus2.png */,
+				5C2984442C25ABB100E618EA /* cactus3.png */,
+				5C2984452C25ABB100E618EA /* doubleCactus.png */,
+				5C2984462C25ABB100E618EA /* tripleCactus.png */,
+			);
+			path = cacti;
+			sourceTree = "<group>";
+		};
+		5C29844D2C25ABB100E618EA /* dinosaurs */ = {
+			isa = PBXGroup;
+			children = (
+				5C2984482C25ABB100E618EA /* dinoDead.png */,
+				5C2984492C25ABB100E618EA /* dinoLeft.png */,
+				5C29844A2C25ABB100E618EA /* dinoRight.png */,
+				5C29844B2C25ABB100E618EA /* flyer1.png */,
+				5C29844C2C25ABB100E618EA /* flyer2.png */,
+			);
+			path = dinosaurs;
+			sourceTree = "<group>";
+		};
+		5C2984512C25ABB100E618EA /* landscape */ = {
+			isa = PBXGroup;
+			children = (
+				5C29844E2C25ABB100E618EA /* cloud.png */,
+				5C29846D2C25B00D00E618EA /* way.png */,
+				5C2984502C25ABB100E618EA /* moon.png */,
+			);
+			path = landscape;
+			sourceTree = "<group>";
+		};
+		5C2984542C25ABB100E618EA /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				5C2984522C25ABB100E618EA /* die.wav */,
+				5C2984532C25ABB100E618EA /* jump.wav */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		5C2984552C25ABB100E618EA /* dino.assets */ = {
+			isa = PBXGroup;
+			children = (
+				5C2984472C25ABB100E618EA /* cacti */,
+				5C29844D2C25ABB100E618EA /* dinosaurs */,
+				5C2984512C25ABB100E618EA /* landscape */,
+				5C2984542C25ABB100E618EA /* sounds */,
+			);
+			path = dino.assets;
+			sourceTree = "<group>";
+		};
+		5C2984652C25ACD000E618EA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5C2984662C25ACE100E618EA /* GroundView.swift */,
+				5C2984732C25B1C900E618EA /* CloudsView.swift */,
+				5C2984772C25D3A000E618EA /* DinoView.swift */,
+				5C2984752C25B5CB00E618EA /* ObstacleView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5C2984682C25AD0500E618EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C2984692C25AD0F00E618EA /* DinoStateModel.swift */,
+				5C29846B2C25AE7E00E618EA /* ObstacleStateModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C2984242C25ABA500E618EA /* DinoGameWatchos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C29843F2C25ABA600E618EA /* Build configuration list for PBXNativeTarget "DinoGameWatchos" */;
+			buildPhases = (
+				5C2984232C25ABA500E618EA /* Resources */,
+				5C29843E2C25ABA600E618EA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C29842E2C25ABA500E618EA /* PBXTargetDependency */,
+			);
+			name = DinoGameWatchos;
+			productName = DinoGameWatchos;
+			productReference = 5C2984252C25ABA500E618EA /* DinoGameWatchos.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		5C29842A2C25ABA500E618EA /* DinoGameWatchos Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C29843B2C25ABA600E618EA /* Build configuration list for PBXNativeTarget "DinoGameWatchos Watch App" */;
+			buildPhases = (
+				5C2984272C25ABA500E618EA /* Sources */,
+				5C2984282C25ABA500E618EA /* Frameworks */,
+				5C2984292C25ABA500E618EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DinoGameWatchos Watch App";
+			productName = "DinoGameWatchos Watch App";
+			productReference = 5C29842B2C25ABA500E618EA /* DinoGameWatchos Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C29841F2C25ABA500E618EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					5C2984242C25ABA500E618EA = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					5C29842A2C25ABA500E618EA = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 5C2984222C25ABA500E618EA /* Build configuration list for PBXProject "DinoGameWatchos" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C29841E2C25ABA500E618EA;
+			productRefGroup = 5C2984262C25ABA500E618EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C2984242C25ABA500E618EA /* DinoGameWatchos */,
+				5C29842A2C25ABA500E618EA /* DinoGameWatchos Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C2984232C25ABA500E618EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C2984292C25ABA500E618EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C2984562C25ABB100E618EA /* cactus1.png in Resources */,
+				5C29845F2C25ABB100E618EA /* flyer2.png in Resources */,
+				5C29846E2C25B00D00E618EA /* way.png in Resources */,
+				5C29845C2C25ABB100E618EA /* dinoLeft.png in Resources */,
+				5C29845D2C25ABB100E618EA /* dinoRight.png in Resources */,
+				5C2984632C25ABB100E618EA /* die.wav in Resources */,
+				5C2984722C25B0DC00E618EA /* Assets.xcassets in Resources */,
+				5C2984642C25ABB100E618EA /* jump.wav in Resources */,
+				5C2984382C25ABA600E618EA /* Preview Assets.xcassets in Resources */,
+				5C29845A2C25ABB100E618EA /* tripleCactus.png in Resources */,
+				5C2984572C25ABB100E618EA /* cactus2.png in Resources */,
+				5C2984582C25ABB100E618EA /* cactus3.png in Resources */,
+				5C2984592C25ABB100E618EA /* doubleCactus.png in Resources */,
+				5C2984622C25ABB100E618EA /* moon.png in Resources */,
+				5C2984602C25ABB100E618EA /* cloud.png in Resources */,
+				5C29845E2C25ABB100E618EA /* flyer1.png in Resources */,
+				5C29845B2C25ABB100E618EA /* dinoDead.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C2984272C25ABA500E618EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C2984332C25ABA500E618EA /* ContentView.swift in Sources */,
+				5C2984312C25ABA500E618EA /* DinoGameWatchosApp.swift in Sources */,
+				5C2984742C25B1C900E618EA /* CloudsView.swift in Sources */,
+				5C29846C2C25AE7E00E618EA /* ObstacleStateModel.swift in Sources */,
+				5C2984762C25B5CB00E618EA /* ObstacleView.swift in Sources */,
+				5C2984672C25ACE100E618EA /* GroundView.swift in Sources */,
+				5C2984782C25D3A000E618EA /* DinoView.swift in Sources */,
+				5C29846A2C25AD0F00E618EA /* DinoStateModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C29842E2C25ABA500E618EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C29842A2C25ABA500E618EA /* DinoGameWatchos Watch App */;
+			targetProxy = 5C29842D2C25ABA500E618EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5C2984392C25ABA600E618EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5C29843A2C25ABA600E618EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		5C29843C2C25ABA600E618EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DinoGameWatchos Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = N62N447LUW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DinoGameWatchos;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pathakmanvendu.DinoGameWatchos.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		5C29843D2C25ABA600E618EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DinoGameWatchos Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = N62N447LUW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DinoGameWatchos;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pathakmanvendu.DinoGameWatchos.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Release;
+		};
+		5C2984402C25ABA600E618EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N62N447LUW;
+				INFOPLIST_KEY_CFBundleDisplayName = DinoGameWatchos;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pathakmanvendu.DinoGameWatchos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5C2984412C25ABA600E618EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N62N447LUW;
+				INFOPLIST_KEY_CFBundleDisplayName = DinoGameWatchos;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pathakmanvendu.DinoGameWatchos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C2984222C25ABA500E618EA /* Build configuration list for PBXProject "DinoGameWatchos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C2984392C25ABA600E618EA /* Debug */,
+				5C29843A2C25ABA600E618EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C29843B2C25ABA600E618EA /* Build configuration list for PBXNativeTarget "DinoGameWatchos Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C29843C2C25ABA600E618EA /* Debug */,
+				5C29843D2C25ABA600E618EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C29843F2C25ABA600E618EA /* Build configuration list for PBXNativeTarget "DinoGameWatchos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C2984402C25ABA600E618EA /* Debug */,
+				5C2984412C25ABA600E618EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C29841F2C25ABA500E618EA /* Project object */;
+}
